@@ -31,7 +31,7 @@ Pointing to the cached superpowers skills directory. Now you can easily browse a
 cd ~/.config/opencode/plugins
 
 # Clone this repository
-git clone https://github.com/YOUR_USERNAME/ensure-superpowers-junction.git
+git clone https://github.com/YJ2CS/ensure-superpowers-junction.git
 
 # Or download and extract manually
 ```
@@ -75,11 +75,26 @@ ensure-superpowers-junction/
 
 ```bash
 # Clone the repo
-git clone https://github.com/YOUR_USERNAME/ensure-superpowers-junction.git
+git clone https://github.com/YJ2CS/ensure-superpowers-junction.git
 
 # Make your changes to .opencode/plugins/ensure-superpowers-junction.js
 
 # Test by restarting OpenCode
+```
+
+## AI Auto-Install
+
+Copy this prompt to OpenCode AI for automatic installation:
+
+```
+Install the ensure-superpowers-junction plugin.
+
+Steps:
+1. Clone https://github.com/YJ2CS/ensure-superpowers-junction.git to ~/.config/opencode/plugins/ensure-superpowers-junction
+2. Verify the plugin file exists at ~/.config/opencode/plugins/ensure-superpowers-junction/.opencode/plugins/ensure-superpowers-junction.js
+3. Restart OpenCode to activate the plugin
+
+Expected result: ~/.config/opencode/skills/superpowers junction created pointing to superpowers cache directory
 ```
 
 ## License
