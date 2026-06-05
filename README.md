@@ -89,10 +89,17 @@ Copy this prompt to OpenCode AI for automatic installation:
 ```
 Install the ensure-superpowers-junction plugin.
 
-Steps:
-1. Clone https://github.com/YJ2CS/ensure-superpowers-junction.git to ~/.config/opencode/plugins/ensure-superpowers-junction
-2. Verify the plugin file exists at ~/.config/opencode/plugins/ensure-superpowers-junction/.opencode/plugins/ensure-superpowers-junction.js
-3. Restart OpenCode to activate the plugin
+Add to plugin array in ~/.config/opencode/opencode.json:
+"ensure-superpowers-junction@git+https://github.com/YJ2CS/ensure-superpowers-junction.git"
+
+(the location must after superpowers) such as:
+
+  "plugin": [
+    "superpowers@git+https://github.com/obra/superpowers.git",
+    "ensure-superpowers-junction@git+https://github.com/YJ2CS/ensure-superpowers-junction.git"
+],
+
+Restart OpenCode to activate.
 
 Expected result: ~/.config/opencode/skills/superpowers junction created pointing to superpowers cache directory
 ```
