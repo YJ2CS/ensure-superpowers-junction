@@ -55,9 +55,11 @@ export default async function ensureSuperpowersJunction({ client, directory }) {
       // 4. 创建 junction（Windows 特有，不需要管理员权限）
       try {
         fs.symlinkSync(targetDir, junctionPath, 'junction');
-        console.log(`[ensure-superpowers-junction] Created junction: ${junctionPath} → ${targetDir}`);
+        console.log(`[ensure-superpowers-junction] ✓ Created junction: ${junctionPath}`);
+        console.log(`[ensure-superpowers-junction]   → ${targetDir}`);
+        console.log(`[ensure-superpowers-junction] ⚠ Please restart OpenCode to load skills from the junction path.`);
       } catch (err) {
-        console.error(`[ensure-superpowers-junction] Failed to create junction:`, err.message);
+        console.error(`[ensure-superpowers-junction] ✗ Failed to create junction:`, err.message);
       }
     }
   };
