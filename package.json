@@ -1,0 +1,7 @@
+{
+  "name": "ensure-superpowers-junction",
+  "version": "1.0.0",
+  "description": "Auto-creates junction to superpowers skills directory at startup",
+  "type": "module",
+  "main": ".opencode/plugins/ensure-superpowers-junction.js"
+}
